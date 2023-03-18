@@ -1,34 +1,26 @@
-# ******************** Setup on SageMaker ***********************
--> Create new notebook → Go to JupyterLab
-
+# *** Setup on SageMaker ***
 bash
 
--> Download github/fastai/fastsetup 
+##### Download github/fastai/fastsetup 
+`git clone https://github.com/fastai/fastsetup.git`
 
-git clone https://github.com/fastai/fastsetup.git
+##### Create fastaiCourse environment
+`conda create -n fastai` 
+`conda activate fastai`
 
--> Create fastaiCourse environment
+##### Download and install mamba 
+`./setup_conda.sh`
 
-conda create -n fastaiCourse
-conda activate fastaiCourse
+##### Download and install fastai
+`mamba install -c fastchan fastai`
 
--> Download and install mamba 
+##### Adding environment to Jupyter notebook
+`conda install -c anaconda ipykernel`
 
-./setup_conda.sh
+`python -m ipykernel install --user --name=fastaiCourse`
 
--> Download and install fastai
+##### To Setup fastaibook
+`mamba install -c fastchan fastbook`
 
-mamba install -c fastchan fastai
-
--> Adding environment to Jupyter notebook
-
-conda install -c anaconda ipykernel
-
-python -m ipykernel install --user --name=fastaiCourse
-
--> To Setup fastaibook
-
-mamba install -c fastchan fastbook
-
-conda install ipywidgets
+`conda install ipywidgets`
 
