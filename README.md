@@ -12,15 +12,15 @@ bash
 `./setup_conda.sh`
 
 ##### Download and install fastai
-`mamba install -c fastchan fastai`
+`mamba install -c fastchan fastai -y`
 
 ##### Adding environment to Jupyter notebook
-`conda install -c anaconda ipykernel`
+`mamba install -c anaconda ipykernel -y`
 
-`python -m ipykernel install --user --name=fastaiCourse`
+`python -m ipykernel install --user --name=fastai`
 
 ##### To Setup fastaibook
-`mamba install -c fastchan fastbook`
+`mamba install -c fastchan fastbook -y`
 
-`conda install ipywidgets`
+`mamba install ipywidgets`
 
